@@ -206,7 +206,7 @@ class AddressBook(UserDict):
 
 def main():
     book = AddressBook()
-    book.read_contacts_from_file()
+    book = book.read_contacts_from_file()
 
     while True:
         user_command = (input('...').lower()).split()
